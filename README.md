@@ -2,9 +2,6 @@
 
 Detection of fraudulent clicks in Google Ads campaigns using five supervised machine learning algorithms on real data from a Brazilian marketing agency.
 
-Base: Master's Thesis at [NOVA IMS](https://www.novaims.unl.pt/), Data-Driven Marketing (2024).
-Author: Camilla Alves.
-
 ---
 
 ## Problem
@@ -66,7 +63,7 @@ The current pipeline runs in batch mode over exported logs. A production-grade v
 
 ## Scope
 
-The ground truth is inherited from Traffic Guardian. The model reproduces that labeling. It does not replace, or claim to outperform, Google's own invalid-click detector.
+The ground truth is inherited from Traffic Guardian. The model reproduces that labeling. It does not replace or claim to outperform Google's own invalid-click detector.
 
 The sample is restricted to two clients from a single agency across three months (January to March 2024). Generalisation to other verticals or time periods was not validated.
 
@@ -85,14 +82,7 @@ The work follows CRISP-DM:
 5. Evaluation. Comparison of all five models across train, validation and test, plus confusion matrices.
 6. Deployment. Flagged IPs exported to Excel, model persisted with `joblib`.
 
-## What comes next in the portfolio
-
-This project is the Scikit-Learn foundation of a broader portfolio. Upcoming projects extend the toolchain:
-
-- Song Popularity Prediction — regression with an MLP in PyTorch, benchmarked against a scikit-learn baseline.
-- Hotel Customer Segmentation — clustering augmented with embeddings of review text from an LLM.
-- Big Data for Marketing (PySpark) — an LLM agent to translate cluster profiles into plain-language personas.
-
 ---
 
 Developed as part of a Master's thesis at NOVA IMS (Lisbon, 2024) and refactored for public portfolio sharing.
+Author: Camilla Alves.
